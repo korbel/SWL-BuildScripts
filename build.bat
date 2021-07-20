@@ -19,9 +19,9 @@ cd "%~dp1"
 for %%f in (bin\*.swf) do set projectname=%%~nf
 set "moddir=%gamedir%\Data\Gui\Custom\Flash\%projectname%\"
 
-xcopy "bin\*.*" "%moddir%" /e /y /I >NUL
-xcopy "src\mod\*.*" "%moddir%" /e /y /I >NUL
-xcopy "*.md" "%moddir%" /e /y /I >NUL
+xcopy "bin\*.*" "%moddir%" /y /I >NUL
+xcopy "src\mod\*.*" "%moddir%" /y /I >NUL
+xcopy "*.md" "%moddir%" /y /I >NUL
 
 :end
 if "%2"=="pause" pause
