@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 if [%1]==[] goto :noarg
 
-set "gamedir=C:\Games\Secret World Legends"
+set "gamedir=D:\Games\Secret World Legends"
 
 "%~dp0fdbuild\fdbuild.exe" "%~1" ^
     -compiler "%~dp0mtasc" ^

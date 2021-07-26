@@ -44,4 +44,4 @@ Project/
 
 It builds the .as2proj file, and copies the content of the `/bin` folder, the `/src/mod` folder and all the `.md` files in the root folder into `<SWL installation folder>\Data\Gui\Custom\Flash\ProjectName`.
 
-The .as2proj file must follow the FlashDevelop project file format. An example Project.as2proj is included next to the build script.
+The .as2proj file must follow the FlashDevelop project file format. An example project that can be used as a template is included in the `template` folder.
