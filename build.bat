@@ -4,7 +4,8 @@ setlocal enabledelayedexpansion
 
 if [%1]==[] goto :noarg
 
-set "gamedir=D:\Games\Secret World Legends"
+if not exist %~dp0gamedir.txt goto :nogamedir
+set /p gamedir=<%~dp0gamedir.txt
 
 "%~dp0fdbuild\fdbuild.exe" "%~1" ^
     -compiler "%~dp0mtasc" ^
@@ -29,4 +30,8 @@ exit /b !errorlevel!
 
 :noarg
 echo Usage: build.bat ^<path of .as2proj file^> [pause]
+exit /b 1
+
+:nogamedir
+echo Error: cannot read gamedir.txt
 exit /b 1

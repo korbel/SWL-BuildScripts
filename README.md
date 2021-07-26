@@ -11,7 +11,7 @@ To make it work you have do these steps first:
 - Download the latest [HaxeDevelop](https://github.com/HaxeFoundation/haxedevelop.org/releases/) and copy the `Tools\fdbuild` (FlashDevelop build tool), `Tools\mtasc` (AS2 compiler) and `Tools\swfmill` (SWF Movie structure creator) folders here.
 - Copy the content of the `<SWL installation folder>\Data\Gui\Custom\Flash\Sources` into the `Sources` folder.
 - You may need to alter the SWL Source, it contains compilation errors. More info here: <https://docs.google.com/document/d/17c5wV2a7Z--KpEWTobFtoWXO-oHSKT43h_94_TRrG-M/edit?usp=sharing>.
-- Change the `gamedir` variable in the `build.bat` file to point to your SWL installation folder.
+- Create a file called `gamedir.txt` next to the `build.bat` and save the location of your SWL installation folder into it. It will be read by the build script.
 
 
 ## Usage
